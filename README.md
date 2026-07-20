@@ -26,7 +26,61 @@ The application was developed using Python, Scikit-learn, TF-IDF Vectorization, 
 Amazon Fine Food Reviews
 # you can download here
 https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews
+
 I analyzed the data with 15000 rows.
+
+---
+
+## How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Maneeha7/Sentiment_analysis_internship_task.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd Sentiment_analysis_internship_task
+```
+
+### 3. Install the required dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Streamlit application
+
+```bash
+streamlit run sentiment_analysis_app.py
+```
+
+### 5. Open the application
+
+After running the command, Streamlit will display a local URL such as:
+
+```
+http://localhost:8501
+```
+
+---
+
+## Project Structure
+
+```
+sentiment_analysis.ipynb
+app.py
+requirements.txt
+README.md
+svm_sentiment_analysis_model.pkl
+tfidf_vectorizer.pkl
+```
+
+---
+
+Open it in your web browser to use the sentiment analysis application.
 
 Labels:
 - Positive
@@ -88,35 +142,6 @@ SVM outperformed among all the 3 models so we will use it further.
 - **Linear SVM** achieved an overall **accuracy of 86.60%**, outperforming Logistic Regression (85.13%) and Naive Bayes (78.13%).
 - The model classified **Positive** reviews very effectively, achieving an **F1-score of 0.93** and **98% recall**.
 - Performance on the **Neutral** class was comparatively lower because neutral reviews often contain language that overlaps with positive or negative sentiments.
-
----
-
-## Project Structure
-
-```
-sentiment_analysis.ipynb
-app.py
-requirements.txt
-README.md
-svm_sentiment_analysis_model.pkl
-tfidf_vectorizer.pkl
-```
-
----
-
-## Installation
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Run
-
-```bash
-streamlit run sentiment_analysis_app.py
-```
 
 ---
 
