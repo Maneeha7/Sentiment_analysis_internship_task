@@ -55,6 +55,40 @@ Labels:
 | Naive Bayes | 78.1% |
 | Support Vector Machine | 86.6% |
 
+
+SVM outperformed among all the 3 models so we will use it further. 
+---
+
+## SVM Evaluation
+
+### Classification Report
+
+| Class | Precision | Recall | F1-Score | Support |
+|--------|----------:|-------:|---------:|--------:|
+| Negative | 0.79 | 0.63 | 0.70 | 430 |
+| Neutral | 0.54 | 0.12 | 0.19 | 226 |
+| Positive | 0.88 | 0.98 | 0.93 | 2344 |
+
+**Overall Accuracy:** **86.60%**
+
+---
+
+### Confusion Matrix
+
+| Actual \ Predicted | Negative | Neutral | Positive |
+|-------------------|---------:|--------:|---------:|
+| **Negative** | 271 | 14 | 145 |
+| **Neutral** | 37 | 26 | 163 |
+| **Positive** | 35 | 8 | 2301 |
+
+---
+
+### Key Observations
+
+- **Linear SVM** achieved an overall **accuracy of 86.60%**, outperforming Logistic Regression (85.13%) and Naive Bayes (78.13%).
+- The model classified **Positive** reviews very effectively, achieving an **F1-score of 0.93** and **98% recall**.
+- Performance on the **Neutral** class was comparatively lower because neutral reviews often contain language that overlaps with positive or negative sentiments.
+
 ---
 
 ## Project Structure
@@ -81,7 +115,7 @@ pip install -r requirements.txt
 ## Run
 
 ```bash
-streamlit run app.py
+streamlit run sentiment_analysis_app.py
 ```
 
 ---
