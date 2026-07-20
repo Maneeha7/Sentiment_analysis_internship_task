@@ -14,8 +14,8 @@ nltk.download("stopwords")
 nltk.download("wordnet")
 
 # Load the saved model and vectorizer
-load_model = joblib.load(r"svm_sentiment_analysis_model.pkl")
-vectorizer = joblib.load(r"tfidf_vectorizer.pkl")
+load_model = joblib.load(r"C:\Users\TAHIR\Documents\Content_Arcade\svm_sentiment_analysis_model.pkl")
+vectorizer = joblib.load(r"C:\Users\TAHIR\Documents\Content_Arcade\tfidf_vectorizer.pkl")
 
 # Initialize NLP tools
 stop_words = set(stopwords.words("english"))
